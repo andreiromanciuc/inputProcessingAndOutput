@@ -1,22 +1,14 @@
 package org.fasttrackit;
 
+import java.util.Scanner;
+
 public class CountingCharacters {
-    private String name;
+    Scanner name = new Scanner(System.in);
 
     public void length(){
-
-        System.out.println("The string "+getName()+" have " + getName().length() + " characters length");
+        System.out.println("Please introduce your name.");
+        String a = name.nextLine();
+        System.out.println("The string "+ a +" have " + a.length() + " characters length");
     }
 
-    public CountingCharacters(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
