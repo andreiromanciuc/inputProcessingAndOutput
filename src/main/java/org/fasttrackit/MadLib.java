@@ -1,53 +1,26 @@
 package org.fasttrackit;
 
-public class MadLib {
-    private String noun;
-    private String verb;
-    private String adjective;
-    private String adverb;
+import java.util.Scanner;
 
+public class MadLib {
+
+    Scanner noun = new Scanner(System.in);
+    Scanner verb = new Scanner(System.in);
+    Scanner adjective = new Scanner(System.in);
+    Scanner adverb = new Scanner(System.in);
 
     public void story (){
-        System.out.println("Do you "+getVerb()+" your " + getAdjective() +" "+getNoun()+" "+getAdverb()+
+        System.out.println("Please insert a noun");
+        String a = noun.nextLine();
+        System.out.println("Please insert a verb");
+        String b = verb.nextLine();
+        System.out.println("Please insert an adjective");
+        String c = adjective.nextLine();
+        System.out.println("Please insert an adverb");
+        String d = adverb.nextLine();
+        System.out.println("Do you "+b+" your " + c +" "+a+" "+d+
                 "? That's hilarious!");
     }
 
-    public MadLib(String noun, String verb, String adjective, String adverb) {
-        this.noun = noun;
-        this.verb = verb;
-        this.adjective = adjective;
-        this.adverb = adverb;
-    }
 
-    public String getNoun() {
-        return noun;
-    }
-
-    public void setNoun(String noun) {
-        this.noun = noun;
-    }
-
-    public String getVerb() {
-        return verb;
-    }
-
-    public void setVerb(String verb) {
-        this.verb = verb;
-    }
-
-    public String getAdjective() {
-        return adjective;
-    }
-
-    public void setAdjective(String adjective) {
-        this.adjective = adjective;
-    }
-
-    public String getAdverb() {
-        return adverb;
-    }
-
-    public void setAdverb(String adverb) {
-        this.adverb = adverb;
-    }
 }
