@@ -5,7 +5,12 @@ public class App
 {
     public static void main( String[] args )
     {
-        SayingHello hello = new SayingHello();
-        hello.hello();
+
+
+        CountingCharacters counting = new CountingCharacters("Andrei");
+        counting.length();
     }
+
+
+
 }
