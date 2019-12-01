@@ -7,8 +7,6 @@ public class App
     {
 
 
-        CountingCharacters counting = new CountingCharacters("Andrei");
-        counting.length();
     }
 
 
